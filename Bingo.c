@@ -22,7 +22,7 @@ int sort(){
 
     int teste_ale_num = 0,recebe;
 
-    srand((unsigned)time(NULL));  //mundado a semente do rand
+    srand((unsigned)time(NULL));  //mudando a semente do rand
 
     recebe = rand()%75; //vai gerar um numero aleatorio no intervalo de 0 a 75
 
@@ -96,7 +96,7 @@ int hacker(){
 
                        printf("%d\t", cartela_gerada[i][n]);
 
-                       cont_parada ++;  //condiçao de batida do bingo
+                       cont_parada ++;  //condiÃ§ao de batida do bingo
                     }else{
                         printf("%d\t", cartela_gerada[i][n]);
                     }
@@ -312,7 +312,7 @@ int cartela(){
         while(aux_test_al_15 == 0){   //testando se na coluna tem um numero igual
             for(int n = 0; n<5; n++){
                 for(int j = 0; j<5; j++){
-                    if(cart[n][0] == cart[j][0] && n != j){  //se o numero for igual na posiçao gera outro numero
+                    if(cart[n][0] == cart[j][0] && n != j){  //se o numero for igual na posiÃ§ao gera outro numero
                         aux = rand()%14;
                         cart[n][0] = cl1[aux];
                     }else{
@@ -437,7 +437,7 @@ void globo(){
         numeros_do_gl[i] = (int *)malloc(5*sizeof(int));//alocando as colunas da matriz
     }
 
-    //zerando todas as posições da matriz numeros_do_gl
+    //zerando todas as posiÃ§Ãµes da matriz numeros_do_gl
     for(int i = 0; i<15; i++){
         for(int n = 0; n<5; n++){
             numeros_do_gl[i][n] = 0;
